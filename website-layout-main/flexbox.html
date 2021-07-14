@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 500px;
+            border: 2px dotted slategray;
+            display: flex;
+            /* by default horizontally flex hoi mane responsive hoy*/
+            /*justify-content: center /flex-end/flex-start/space-around/space-between/space-evely; aita hosse  by default horizontally kaj kore */
+
+            align-items: center;
+            /*vertically kaj korer jonno .justify-content  horizontally kaj kore */
+
+
+        }
+
+        .box {
+            width: 200px;
+            border: 3px dashed rebeccapurple;
+            /*border lekte gele pixel size j kono akta abong ki type ar border hobe sollid/dotted/dashed seita dite hobe + color dia dite hobe*/
+
+
+            /*border: 3px solid/dotted red;*/
+            /* font-size: 3em; */
+            /*default size ar 3 gun*/
+        }
+
+        #box-1 {
+            order: 2;
+        }
+
+        #box-2 {
+            order: 1;
+            flex-grow: 1;
+            /*flex grow hosse joto tuku fakajaiga thakbe boro hobe*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">
+            <h3>BOX-2</h3>
+            <article class="blog">
+                <h4>Blog-1</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aliquid hic, fugiat perferendis ipsum
+                    necessitatibus labore porro esse magnam nostrum quos consequuntur minima assumenda facilis incidunt
+                    eius rerum voluptatum doloremque.</p>
+            </article>
+            <article class="blog">
+                <h4>Blog-2</h4>
+                <p>Excepturi porro sed beatae? Illo repellendus eos saepe ea velit ipsam maiores adipisci obcaecati non
+                    et, praesentium pariatur quos labore quas ex aut quae harum repudiandae hic voluptatem molestiae
+                    sit!</p>
+            </article>
+            <article class="blog">
+                <h4>Blog-3</h4>
+                <p>Consequuntur, animi, ratione quis consectetur earum quas nihil aspernatur numquam vel ducimus vero
+                    quibusdam? Iure ea sint assumenda odio quas molestiae odit sit dicta, eaque quod placeat. Eos, est
+                    alias.</p>
+            </article>
+        </div>
+
+    </div>
+</body>
+
+</html>
